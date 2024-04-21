@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Interest</title>
+
+    <style>
+        body {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .simple-interest-calculator{
+            display: flex;
+            gap: 20px;
+            flex-direction: column;
+            align-items: center;
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 20px;
+            width: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="simple-interest-calculator">
+        <h1>Simple Interest Calculator</h1>
+        <div>
+            <label for="principal">Principal</label>
+            <input type="text" name="principal" id="principal">
+        </div>
+
+        <div>
+            <label for="time">Time</label>
+            <input type="text" name="time" id="time">
+        </div>
+
+        <div>
+            <label for="rate">Rate</label>
+            <input type="text" name="rate" id="rate">
+        </div>
+
+        <button id="calculateBtn">Calculate</button>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
